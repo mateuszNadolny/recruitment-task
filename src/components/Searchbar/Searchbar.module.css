@@ -24,8 +24,7 @@
 }
 
 .searchbarInput:focus {
-  outline: 1px solid;
-  border-radius: 0.5rem;
+  outline: 1px solid #c9c9c977;
 }
 
 ::-webkit-input-placeholder {
