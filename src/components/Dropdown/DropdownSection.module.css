@@ -52,7 +52,7 @@
   }
 
   .dropdownButtonOpen {
-    position: fixed;
+    position: absolute;
     right: 2rem;
     top: 6.06rem;
     background: none;
