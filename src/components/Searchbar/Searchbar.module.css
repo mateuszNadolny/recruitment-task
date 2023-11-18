@@ -1,0 +1,58 @@
+.searchbarContainer {
+  margin-top: 1.44;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbarWrapper {
+  box-sizing: border-box;
+  width: 21.625rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.searchbarInput {
+  width: 13.625rem;
+  font-family: 'Samsung-Light';
+  color: #000;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+  border: none;
+}
+
+.searchbarInput:focus {
+  outline: 1px solid;
+  border-radius: 0.5rem;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+::-moz-placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+::placeholder {
+  color: #000;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #000;
+}
