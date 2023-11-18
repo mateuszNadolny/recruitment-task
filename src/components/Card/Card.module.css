@@ -1,0 +1,184 @@
+.cardContainer {
+  box-sizing: border-box;
+  width: 21.125rem;
+  height: 37.6875rem;
+  margin-bottom: 1.25rem;
+  padding: 1.5625rem 1.5rem;
+  border-radius: 1.25rem;
+  background: #fff;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgContainer {
+  width: 18.125rem;
+  height: 12.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.image {
+  width: 12.5rem;
+  height: 12.5rem;
+  flex-shrink: 0;
+}
+
+.titleContainer {
+  width: 18.125rem;
+  height: 4.5625rem;
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  margin-bottom: 0.5rem;
+}
+
+.descriptionContainer {
+  width: 18.125rem;
+  height: 4.4375rem;
+  margin-bottom: 0.88rem;
+}
+
+.descriptionLabel {
+  color: #767676;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  margin: 0;
+}
+
+.descriptionSpan {
+  color: #000;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+
+.energyClassContainer {
+  width: 18.125rem;
+  height: 1.125rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.56rem;
+  margin-bottom: 0.88rem;
+}
+
+.energyClassArrowBox {
+  margin-left: 0.56rem;
+  width: 3.0625rem;
+  height: 1.125rem;
+  z-index: 10;
+  position: relative;
+}
+
+.energyClassArrow {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.energyClassParagraph {
+  position: absolute;
+  left: 0.37rem;
+  top: 0.12rem;
+  color: #fff;
+  font-family: 'Samsung-Bold';
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 18.125rem;
+  height: 3.6876rem;
+  margin-bottom: 0.88rem;
+}
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.price {
+  margin: 0;
+  margin-right: 0.125rem;
+  color: #000;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.priceDecimalsWrapper {
+  padding-top: 0.06rem;
+  height: 1.9375rem;
+  text-align: right;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1rem;
+  margin: 0;
+}
+
+.priceDecimals {
+  margin: 0;
+}
+
+.instalmentInfo {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+
+.choiceBtnContainer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.choiceBtn {
+  cursor: pointer;
+  font-family: 'Samsung-Light';
+  display: flex;
+  width: 9.375rem;
+  height: 2.25rem;
+  padding: 0.875rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 1.5rem;
+  color: #ffffff;
+  background: #1428a0;
+  text-transform: uppercase;
+  border: none;
+  transform: ease-in-out 3s;
+}
+
+.choiceBtn:hover {
+  background: #2338b2;
+}
+
+.choiceBtn:active {
+  transform: scale(0.98);
+}
+
+.btnChosen {
+  background: #1c1c1c;
+}

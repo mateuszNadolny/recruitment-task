@@ -14,11 +14,12 @@ export interface WashingMachineData {
   id: string;
   label: string;
   color: string;
-  capacity: string;
-  deepth: string;
-  width: string;
-  height: string;
+  capacity: number;
+  depth: number;
+  width: number;
+  height: number;
   functions: string[];
   energyClass: string;
-  price: string;
+  price: number;
+  imageSrc: string;
 }

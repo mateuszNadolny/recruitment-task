@@ -32,15 +32,15 @@ export const DropdownData: DropdownOption[] = [
   }
 ];
 
-const WashingMachinesData: WashingMachineData[] = [
+export const WashingMachinesData: WashingMachineData[] = [
   {
-    id: 'WW90T754ABT0',
-    label: 'Pralka QuickDrive™',
+    id: 'WW90T754ABT',
+    label: 'QuickDrive™',
     color: 'biała',
-    capacity: '9',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 9,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -48,16 +48,17 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'A',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW90T754ABT.png'
   },
   {
     id: 'WW10T654DLH',
-    label: 'Pralka EcoBubble™',
+    label: 'EcoBubble™',
     color: 'biała',
-    capacity: '10,5',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 10.5,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -65,16 +66,17 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'B',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW10T654DLH.png'
   },
   {
     id: 'WW90T654DLH',
-    label: 'Pralka EcoBubble™',
+    label: 'EcoBubble™',
     color: 'biała',
-    capacity: '9',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 9,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -82,16 +84,17 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'C',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW90T654DLH.png'
   },
   {
     id: 'WW90T754ABT',
-    label: 'Pralka QuickDrive™',
+    label: 'QuickDrive™',
     color: 'biała',
-    capacity: '9',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 9,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -99,16 +102,17 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'D',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW90T754ABT.png'
   },
   {
     id: 'WW10T654DLH',
-    label: 'Pralka EcoBubble™',
+    label: 'EcoBubble™',
     color: 'biała',
-    capacity: '10,5',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 10.5,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -116,16 +120,17 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'E',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW10T654DLH.png'
   },
   {
     id: 'WW90T654DLH',
-    label: 'Pralka EcoBubble™',
+    label: 'EcoBubble™',
     color: 'biała',
-    capacity: '8',
-    deepth: '55',
-    width: '60',
-    height: '85',
+    capacity: 8,
+    depth: 55,
+    width: 60,
+    height: 85,
     functions: [
       'Drzwi AddWash™',
       'Panel Ai Control',
@@ -133,6 +138,7 @@ const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'F',
-    price: '3199'
+    price: 3199,
+    imageSrc: '../../images/WW90T654DLH.png'
   }
 ];
