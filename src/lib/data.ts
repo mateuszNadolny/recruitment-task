@@ -4,15 +4,14 @@ export const DropdownData: DropdownOption[] = [
   {
     id: 'sortBy',
     label: 'Sortuj po',
-    default: 'Popularność',
-    options: ['Wszystkie', 'Cena', 'Pojemność']
+    defaultOption: 'Popularność',
+    options: ['Cena', 'Pojemność']
   },
   {
     id: 'functions',
     label: 'Funkcje',
-    default: 'Pokaż wszystkie',
+    defaultOption: 'Pokaż wszystkie',
     options: [
-      'Wszystkie',
       'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
@@ -22,13 +21,13 @@ export const DropdownData: DropdownOption[] = [
   {
     id: 'energeticClass',
     label: 'Klasa energetyczna',
-    default: 'Pokaż wszystkie',
-    options: ['Wszystkie', 'A', 'B', 'D']
+    defaultOption: 'Pokaż wszystkie',
+    options: ['A', 'B', 'D']
   },
   {
     id: 'capacity',
     label: 'Pojemność',
-    default: 'Pokaż wszystkie',
-    options: ['Wszystkie', '9kg', '8kg', '10.5kg']
+    defaultOption: 'Pokaż wszystkie',
+    options: ['9kg', '8kg', '10.5kg']
   }
 ];
