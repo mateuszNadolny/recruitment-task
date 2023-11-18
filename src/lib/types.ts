@@ -1,11 +1,11 @@
-export interface Dropdown {
-  label: string;
-  options: string[];
+export interface UseOutsideClick {
+  ref: React.RefObject<HTMLElement>;
+  callback: () => void;
 }
 
 export interface DropdownOption {
   id: string;
   label: string;
-  default: string;
+  defaultOption: string;
   options: string[];
 }
