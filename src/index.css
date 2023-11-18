@@ -1,13 +1,19 @@
 @font-face {
-  font-family: "SamsungOne";
+  font-family: "Samsung-Light";
   src: local("SamsungOne-400.ttf"),
     url("./fonts/SamsungOne-400.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Samsung-Bold";
+  src: local("SamsungOne-700.ttf"),
+    url("./fonts/SamsungOne-700.ttf") format("truetype");
 }
 
 
 body {
   margin: 0;
-  font-family: 'SamsungOne';
+  font-family: 'Samsung-Light';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
