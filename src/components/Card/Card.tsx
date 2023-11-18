@@ -24,12 +24,12 @@ const Card = ({ ...props }: WashingMachineData) => {
       const decimalPart = price.toString().split('.')[1];
       return decimalPart;
     } else {
-      // Return '00' if there are no decimals
       return '00';
     }
   };
 
   const image = require(`../../images/${props.id}.png`);
+
   return (
     <div className={styles.cardContainer}>
       <div className={styles.cardWrapper}>
