@@ -1,0 +1,83 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 15.5625rem;
+  height: 3.9375rem;
+}
+
+.dropdownLabel {
+  color: #000;
+  font-family: 'Samsung-Bold';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  margin: 0 0 0.44rem 0;
+}
+
+.dropdownDefaultOption {
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  height: 1.25rem;
+  margin-bottom: 0.38rem;
+}
+
+.dropdownDefaultOptionText {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.dropdownDefaultOptionPolygon {
+  width: 0.8125rem;
+  height: 0.8125rem;
+}
+
+.dropdownDefaultOption:hover {
+  outline: 1px solid #c9c9c977;
+}
+
+.dropdownOptionsWrapper {
+  background: #fdfdfd;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.02);
+  width: 15.5625rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.dropdownOption,
+.dropdownAll {
+  box-sizing: border-box;
+  height: 2.5rem;
+  margin: 0;
+  padding-left: 1.06rem;
+}
+
+.dropdownOption:hover,
+.dropdownAll:hover {
+  background-color: #f3f3f3;
+}
+
+.dropdownAll {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  padding-top: 0.69rem;
+}
+
+.dropdownOption {
+  color: #000;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  padding-top: 0.87rem;
+}

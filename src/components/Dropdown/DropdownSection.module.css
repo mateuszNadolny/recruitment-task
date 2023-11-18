@@ -1,0 +1,77 @@
+.dropdownSection {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdownButtonOpen,
+.dropdownButtonClose {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .dropdownSection {
+    z-index: 20;
+    margin-top: 0;
+    padding-top: 2rem;
+    background: #f3f3f3;
+    position: fixed;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .dropdownSectionOpen {
+    transform: translateX(0);
+  }
+
+  .dropdownSectionClosed {
+    transform: translateX(-100%);
+  }
+
+  .dropdownButtonOpen,
+  .dropdownButtonClose {
+    display: flex;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .dropdownButtonOpen:active,
+  .dropdownButtonClose:active {
+    transform: scale(0.9);
+  }
+
+  .dropdownButtonOpen {
+    position: fixed;
+    right: 2rem;
+    top: 6.06rem;
+    background: none;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .dropdownButtonClose {
+    font-family: 'Samsung-Bold';
+    padding: 1rem;
+    background: #1428a0;
+    border-radius: 1.5rem;
+    color: #ffffff;
+    padding: 0.875rem 2.5rem;
+  }
+
+  .dropdownButtonImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

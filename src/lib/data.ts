@@ -4,8 +4,8 @@ export const DropdownData: DropdownOption[] = [
   {
     id: 'sortBy',
     label: 'Sortuj po',
-    defaultOption: 'Popularność',
-    options: ['Cena', 'Pojemność']
+    defaultOption: 'Pokaż wszystkie',
+    options: ['Popularność', 'Cena', 'Pojemność']
   },
   {
     id: 'functions',

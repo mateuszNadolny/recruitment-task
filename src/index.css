@@ -1,24 +1,21 @@
 @font-face {
-  font-family: "Samsung-Light";
-  src: local("SamsungOne-400.ttf"),
-    url("./fonts/SamsungOne-400.ttf") format("truetype");
+  font-family: 'Samsung-Light';
+  src: local('SamsungOne-400.ttf'), url('./fonts/SamsungOne-400.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: "Samsung-Bold";
-  src: local("SamsungOne-700.ttf"),
-    url("./fonts/SamsungOne-700.ttf") format("truetype");
+  font-family: 'Samsung-Bold';
+  src: local('SamsungOne-700.ttf'), url('./fonts/SamsungOne-700.ttf') format('truetype');
 }
-
 
 body {
   margin: 0;
   font-family: 'Samsung-Light';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
