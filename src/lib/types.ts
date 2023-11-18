@@ -21,5 +21,4 @@ export interface WashingMachineData {
   functions: string[];
   energyClass: string;
   price: number;
-  imageSrc: string;
 }

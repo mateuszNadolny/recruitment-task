@@ -48,8 +48,7 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'A',
-    price: 3199,
-    imageSrc: '../../images/WW90T754ABT.png'
+    price: 3199
   },
   {
     id: 'WW10T654DLH',
@@ -66,8 +65,7 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'B',
-    price: 3199,
-    imageSrc: '../../images/WW10T654DLH.png'
+    price: 3199
   },
   {
     id: 'WW90T654DLH',
@@ -84,8 +82,7 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'C',
-    price: 3199,
-    imageSrc: '../../images/WW90T654DLH.png'
+    price: 3199
   },
   {
     id: 'WW90T754ABT',
@@ -102,8 +99,7 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'D',
-    price: 3199,
-    imageSrc: '../../images/WW90T754ABT.png'
+    price: 3199
   },
   {
     id: 'WW10T654DLH',
@@ -120,8 +116,7 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'E',
-    price: 3199,
-    imageSrc: '../../images/WW10T654DLH.png'
+    price: 3199
   },
   {
     id: 'WW90T654DLH',
@@ -138,7 +133,6 @@ export const WashingMachinesData: WashingMachineData[] = [
       'Wyświetlacz elektroniczny'
     ],
     energyClass: 'F',
-    price: 3199,
-    imageSrc: '../../images/WW90T654DLH.png'
+    price: 3199
   }
 ];
