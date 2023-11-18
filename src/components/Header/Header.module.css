@@ -1,0 +1,19 @@
+.headerContainer {
+  text-align: center;
+  height: 4.13rem;
+  padding-bottom: 0.63rem;
+}
+
+.headerWrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContent {
+  font-family: 'Samsung-Bold';
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 0;
+}
