@@ -9,3 +9,16 @@ export interface DropdownOption {
   defaultOption: string;
   options: string[];
 }
+
+export interface WashingMachineData {
+  id: string;
+  label: string;
+  color: string;
+  capacity: string;
+  deepth: string;
+  width: string;
+  height: string;
+  functions: string[];
+  energyClass: string;
+  price: string;
+}
