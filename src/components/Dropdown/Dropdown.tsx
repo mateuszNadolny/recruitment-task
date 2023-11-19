@@ -8,7 +8,6 @@ import { FilterContext } from '../../contexts/FilterContext';
 import styles from './Dropdown.module.css';
 
 import polygon from '../../images/polygon.svg';
-import { validateHeaderValue } from 'http';
 
 const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
