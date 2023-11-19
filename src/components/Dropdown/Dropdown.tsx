@@ -1,16 +1,36 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 
 import { DropdownOption } from '../../lib/types';
 import { useOutsideClick } from '../../hooks/useOutsideClick';
 
+import { FilterContext } from '../../contexts/FilterContext';
+
 import styles from './Dropdown.module.css';
 
 import polygon from '../../images/polygon.svg';
+import { validateHeaderValue } from 'http';
 
 const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [selectedFilter, setSelectedFilter] = useState<string>('');
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const { setEnergyClassFilter } = useContext(FilterContext);
+  const { setFunctionsFilter } = useContext(FilterContext);
+  const { setCapacityFilter } = useContext(FilterContext);
+
+  const handleFilterContextChange = (option: string) => {
+    setSelectedFilter(option);
+    setIsOpen(false);
+
+    if (id === 'energyClass') {
+      setEnergyClassFilter(option);
+    } else if (id === 'functions') {
+      setFunctionsFilter(option.split(','));
+    } else if (id === 'capacity') {
+      setCapacityFilter(option);
+    }
+  };
 
   useOutsideClick({ ref: dropdownRef, callback: () => setIsOpen(false) });
 
@@ -30,8 +50,7 @@ const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
           <p
             className={styles.dropdownAll}
             onClick={() => {
-              setSelectedFilter('');
-              setIsOpen(false);
+              handleFilterContextChange('');
             }}>
             Wszystkie
           </p>
@@ -41,8 +60,7 @@ const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
               style={selectedFilter === option ? { backgroundColor: '#f3f3f3' } : undefined}
               key={option}
               onClick={() => {
-                setSelectedFilter(option);
-                setIsOpen(false);
+                handleFilterContextChange(option);
               }}>
               {option}
             </p>
