@@ -6,6 +6,7 @@ import Card from './Card';
 
 import { FilterContext } from '../../contexts/FilterContext';
 import { SortContext } from '../../contexts/SortContext';
+import { SearchContext } from '../../contexts/SearchContext';
 import { WashingMachinesData } from '../../lib/data';
 import { WashingMachineDataProps } from '../../lib/types';
 
@@ -14,6 +15,7 @@ import polygon from '../../images/polygon-2.svg';
 const CardSection = () => {
   const { energyClassFilter, functionsFilter, capacityFilter } = useContext(FilterContext);
   const { sortBy } = useContext(SortContext);
+  const { searchBy } = useContext(SearchContext);
   const [sortedMachines, setSortedMachines] =
     useState<WashingMachineDataProps[]>(WashingMachinesData);
 

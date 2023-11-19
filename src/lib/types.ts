@@ -40,3 +40,8 @@ export interface SortContextValue {
   sortBy: string;
   setSortBy: React.Dispatch<React.SetStateAction<string>>;
 }
+
+export interface SearchContextValue {
+  searchBy: string;
+  setSearchBy: React.Dispatch<React.SetStateAction<string>>;
+}

@@ -5,18 +5,21 @@ import CardSection from './components/Card/CardSection';
 
 import { FilterProvider } from './contexts/FilterContext';
 import { SortProvider } from './contexts/SortContext';
+import { SearchProvider } from './contexts/SearchContext';
 
 function App() {
   return (
     <>
       <Header />
-      <FilterProvider>
-        <SortProvider>
-          <Searchbar />
-          <DropdownSection />
-          <CardSection />
-        </SortProvider>
-      </FilterProvider>
+      <SearchProvider>
+        <FilterProvider>
+          <SortProvider>
+            <Searchbar />
+            <DropdownSection />
+            <CardSection />
+          </SortProvider>
+        </FilterProvider>
+      </SearchProvider>
     </>
   );
 }
