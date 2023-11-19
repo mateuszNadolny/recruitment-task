@@ -9,7 +9,7 @@ import styles from './DropdownSection.module.css';
 import filterBtn from '../../images/filterBtn.svg';
 
 const DropdownSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   return (
     <>

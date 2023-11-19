@@ -6,7 +6,7 @@ import vector from '../../images/energy-class-vector.svg';
 
 import styles from './Card.module.css';
 const Card = ({ ...props }: WashingMachineData) => {
-  const [isChosen, setIsChosen] = useState(false);
+  const [isChosen, setIsChosen] = useState<boolean>(false);
   const formatCapacity = (capacity: number) => {
     return capacity.toString().replace('.', ',');
   };
