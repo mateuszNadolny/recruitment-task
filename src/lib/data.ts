@@ -1,4 +1,4 @@
-import { DropdownOption, WashingMachineData } from './types';
+import { DropdownOption, WashingMachineDataProps } from './types';
 
 export const DropdownData: DropdownOption[] = [
   {
@@ -32,7 +32,7 @@ export const DropdownData: DropdownOption[] = [
   }
 ];
 
-export const WashingMachinesData: WashingMachineData[] = [
+export const WashingMachinesData: WashingMachineDataProps[] = [
   {
     keyId: 1,
     id: 'WW90T754ABT',

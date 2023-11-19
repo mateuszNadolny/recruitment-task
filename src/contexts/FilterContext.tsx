@@ -1,6 +1,6 @@
 import { createContext, useState } from 'react';
 
-import { FilterProviderProps, FilterContextValue } from '../lib/types';
+import { ContextProviderProps, FilterContextValue } from '../lib/types';
 
 export const FilterContext = createContext<FilterContextValue>({
   energyClassFilter: '',
@@ -11,7 +11,7 @@ export const FilterContext = createContext<FilterContextValue>({
   setCapacityFilter: () => {}
 });
 
-export const FilterProvider = ({ children }: FilterProviderProps) => {
+export const FilterProvider = ({ children }: ContextProviderProps) => {
   const [energyClassFilter, setEnergyClassFilter] = useState<string>('');
   const [functionsFilter, setFunctionsFilter] = useState<string>('');
   const [capacityFilter, setCapacityFilter] = useState<number>(0);

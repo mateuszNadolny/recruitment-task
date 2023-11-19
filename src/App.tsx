@@ -4,14 +4,18 @@ import DropdownSection from './components/Dropdown/DropdownSection';
 import CardSection from './components/Card/CardSection';
 
 import { FilterProvider } from './contexts/FilterContext';
+import { SortProvider } from './contexts/SortContext';
+
 function App() {
   return (
     <>
       <Header />
       <FilterProvider>
-        <Searchbar />
-        <DropdownSection />
-        <CardSection />
+        <SortProvider>
+          <Searchbar />
+          <DropdownSection />
+          <CardSection />
+        </SortProvider>
       </FilterProvider>
     </>
   );

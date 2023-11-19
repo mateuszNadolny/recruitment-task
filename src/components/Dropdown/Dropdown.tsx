@@ -4,6 +4,7 @@ import { DropdownOption } from '../../lib/types';
 import { useOutsideClick } from '../../hooks/useOutsideClick';
 
 import { FilterContext } from '../../contexts/FilterContext';
+import { SortContext } from '../../contexts/SortContext';
 
 import styles from './Dropdown.module.css';
 
@@ -18,9 +19,15 @@ const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
   const { setFunctionsFilter } = useContext(FilterContext);
   const { setCapacityFilter } = useContext(FilterContext);
 
+  const { setSortBy } = useContext(SortContext);
+
   const handleFilterContextChange = (option: string) => {
     setSelectedFilter(option);
     setIsOpen(false);
+
+    if (id === 'sortBy') {
+      setSortBy(option);
+    }
 
     if (id === 'energyClass') {
       setEnergyClassFilter(option);

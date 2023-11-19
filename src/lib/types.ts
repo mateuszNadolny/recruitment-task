@@ -1,4 +1,4 @@
-export interface UseOutsideClick {
+export interface UseOutsideClickProps {
   ref: React.RefObject<HTMLElement>;
   callback: () => void;
 }
@@ -10,7 +10,7 @@ export interface DropdownOption {
   options: string[];
 }
 
-export interface WashingMachineData {
+export interface WashingMachineDataProps {
   keyId: number;
   id: string;
   label: string;
@@ -24,7 +24,7 @@ export interface WashingMachineData {
   price: number;
 }
 
-export interface FilterProviderProps {
+export interface ContextProviderProps {
   children: React.ReactNode;
 }
 export interface FilterContextValue {
@@ -34,4 +34,9 @@ export interface FilterContextValue {
   setFunctionsFilter: React.Dispatch<React.SetStateAction<string>>;
   capacityFilter: number;
   setCapacityFilter: React.Dispatch<React.SetStateAction<number>>;
+}
+
+export interface SortContextValue {
+  sortBy: string;
+  setSortBy: React.Dispatch<React.SetStateAction<string>>;
 }
