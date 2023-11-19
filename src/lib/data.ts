@@ -22,7 +22,7 @@ export const DropdownData: DropdownOption[] = [
     id: 'energyClass',
     label: 'Klasa energetyczna',
     defaultOption: 'Pokaż wszystkie',
-    options: ['A', 'B', 'D']
+    options: ['A', 'B', 'C', 'D', 'E', 'F']
   },
   {
     id: 'capacity',
@@ -34,6 +34,7 @@ export const DropdownData: DropdownOption[] = [
 
 export const WashingMachinesData: WashingMachineData[] = [
   {
+    keyId: 1,
     id: 'WW90T754ABT',
     label: 'QuickDrive™',
     color: 'biała',
@@ -42,7 +43,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWas',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'
@@ -51,6 +52,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     price: 3199
   },
   {
+    keyId: 2,
     id: 'WW10T654DLH',
     label: 'EcoBubble™',
     color: 'biała',
@@ -59,7 +61,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'
@@ -68,6 +70,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     price: 3199
   },
   {
+    keyId: 3,
     id: 'WW90T654DLH',
     label: 'EcoBubble™',
     color: 'biała',
@@ -76,7 +79,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'
@@ -85,6 +88,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     price: 3199
   },
   {
+    keyId: 4,
     id: 'WW90T754ABT',
     label: 'QuickDrive™',
     color: 'biała',
@@ -93,7 +97,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'
@@ -102,6 +106,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     price: 3199
   },
   {
+    keyId: 5,
     id: 'WW10T654DLH',
     label: 'EcoBubble™',
     color: 'biała',
@@ -110,7 +115,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'
@@ -119,6 +124,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     price: 3199
   },
   {
+    keyId: 6,
     id: 'WW90T654DLH',
     label: 'EcoBubble™',
     color: 'biała',
@@ -127,7 +133,7 @@ export const WashingMachinesData: WashingMachineData[] = [
     width: 60,
     height: 85,
     functions: [
-      'Drzwi AddWash™',
+      'Drzwi AddWash',
       'Panel Ai Control',
       'Silnik inwerterowy',
       'Wyświetlacz elektroniczny'

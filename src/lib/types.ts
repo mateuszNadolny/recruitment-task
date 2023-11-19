@@ -11,6 +11,7 @@ export interface DropdownOption {
 }
 
 export interface WashingMachineData {
+  keyId: number;
   id: string;
   label: string;
   color: string;
