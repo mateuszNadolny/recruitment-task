@@ -25,9 +25,15 @@ const Dropdown = ({ id, label, defaultOption, options }: DropdownOption) => {
     if (id === 'energyClass') {
       setEnergyClassFilter(option);
     } else if (id === 'functions') {
-      setFunctionsFilter(option.split(','));
+      setFunctionsFilter(option);
     } else if (id === 'capacity') {
-      setCapacityFilter(option);
+      if (option === '') {
+        setCapacityFilter(0);
+      }
+      const value = option.match(/[\d\.]+/);
+      if (value) {
+        setCapacityFilter(parseFloat(value[0]));
+      }
     }
   };
 

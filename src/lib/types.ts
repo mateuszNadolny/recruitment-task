@@ -29,8 +29,8 @@ export interface FilterProviderProps {
 export interface FilterContextValue {
   energyClassFilter: string;
   setEnergyClassFilter: React.Dispatch<React.SetStateAction<string>>;
-  functionsFilter: any[];
-  setFunctionsFilter: React.Dispatch<React.SetStateAction<any[]>>;
-  capacityFilter: string;
-  setCapacityFilter: React.Dispatch<React.SetStateAction<string>>;
+  functionsFilter: string;
+  setFunctionsFilter: React.Dispatch<React.SetStateAction<string>>;
+  capacityFilter: number;
+  setCapacityFilter: React.Dispatch<React.SetStateAction<number>>;
 }
