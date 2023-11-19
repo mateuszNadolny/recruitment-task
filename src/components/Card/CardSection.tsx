@@ -14,35 +14,40 @@ import polygon from '../../images/polygon-2.svg';
 const CardSection = () => {
   const { energyClassFilter, functionsFilter, capacityFilter } = useContext(FilterContext);
   const { sortBy } = useContext(SortContext);
-  const [filteredMachines, setFilteredMachines] =
+  const [sortedMachines, setSortedMachines] =
     useState<WashingMachineDataProps[]>(WashingMachinesData);
-  const [sortedMachines, setSortedMachines] = useState<WashingMachineDataProps[]>(filteredMachines);
 
   useEffect(() => {
-    const filterData = () => {
-      return WashingMachinesData.filter((machine) => {
-        const matchesEnergyClass =
-          energyClassFilter === '' || machine.energyClass === energyClassFilter;
-        const matchesFunctions =
-          functionsFilter === '' || machine.functions.includes(functionsFilter);
-        const matchesCapacity = capacityFilter === 0 || machine.capacity === capacityFilter;
+    const filterData = WashingMachinesData.filter((machine) => {
+      const matchesEnergyClass =
+        energyClassFilter === '' || machine.energyClass === energyClassFilter;
+      const matchesFunctions =
+        functionsFilter === '' || machine.functions.includes(functionsFilter);
+      const matchesCapacity = capacityFilter === 0 || machine.capacity === capacityFilter;
 
-        return matchesEnergyClass && matchesFunctions && matchesCapacity;
-      });
+      return matchesEnergyClass && matchesFunctions && matchesCapacity;
+    });
+
+    const sortData = () => {
+      if (sortBy === 'Cena') {
+        return filterData.sort((a, b) => a.price - b.price);
+      } else if (sortBy === 'Pojemność') {
+        return filterData.sort((a, b) => a.capacity - b.capacity);
+      } else {
+        return filterData;
+      }
     };
 
-    setFilteredMachines(filterData());
-  }, [energyClassFilter, functionsFilter, capacityFilter]);
+    const sortedAndFiltered = sortData();
+    setSortedMachines(sortedAndFiltered);
+  }, [energyClassFilter, functionsFilter, capacityFilter, sortBy]);
 
   return (
     <div className={styles.cardSectionContainer}>
       <div className={styles.cardSectionWrapper}>
-        <p
-          className={
-            styles.cardSectionAllResults
-          }>{`Liczba wyników: ${filteredMachines.length}`}</p>
+        <p className={styles.cardSectionAllResults}>{`Liczba wyników: ${sortedMachines.length}`}</p>
         <div className={styles.allCards}>
-          {filteredMachines.map((machine) => (
+          {sortedMachines.map((machine) => (
             <Card key={machine.keyId} {...machine} />
           ))}
         </div>
