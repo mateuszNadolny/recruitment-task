@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
+import styles from './Card.module.css';
+
 import { WashingMachineDataProps } from '../../lib/types';
 
 import vector from '../../images/energy-class-vector.svg';
 
-import styles from './Card.module.css';
 const Card = ({ ...props }: WashingMachineDataProps) => {
   const [isChosen, setIsChosen] = useState<boolean>(false);
   const formatCapacity = (capacity: number) => {

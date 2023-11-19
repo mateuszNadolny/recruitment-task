@@ -1,12 +1,11 @@
 import { useState, useRef, useContext } from 'react';
 
+import styles from './Dropdown.module.css';
+
 import { DropdownOption } from '../../lib/types';
 import { useOutsideClick } from '../../hooks/useOutsideClick';
-
 import { FilterContext } from '../../contexts/FilterContext';
 import { SortContext } from '../../contexts/SortContext';
-
-import styles from './Dropdown.module.css';
 
 import polygon from '../../images/polygon.svg';
 

@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import { DropdownData } from '../../lib/data';
+import styles from './DropdownSection.module.css';
 
 import Dropdown from './Dropdown';
 
-import styles from './DropdownSection.module.css';
+import { DropdownData } from '../../lib/data';
 
 import filterBtn from '../../images/filterBtn.svg';
 

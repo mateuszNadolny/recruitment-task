@@ -1,14 +1,14 @@
 import { useState, useEffect, useContext } from 'react';
 
+import styles from './CardSection.module.css';
+
 import Card from './Card';
 
 import { FilterContext } from '../../contexts/FilterContext';
 import { SortContext } from '../../contexts/SortContext';
-
 import { WashingMachinesData } from '../../lib/data';
 import { WashingMachineDataProps } from '../../lib/types';
 
-import styles from './CardSection.module.css';
 import polygon from '../../images/polygon-2.svg';
 
 const CardSection = () => {
