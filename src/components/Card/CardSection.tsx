@@ -26,8 +26,10 @@ const CardSection = () => {
       const matchesFunctions =
         functionsFilter === '' || machine.functions.includes(functionsFilter);
       const matchesCapacity = capacityFilter === 0 || machine.capacity === capacityFilter;
+      const matchesSearch =
+        searchBy === '' || machine.id.toLowerCase().includes(searchBy.toLowerCase());
 
-      return matchesEnergyClass && matchesFunctions && matchesCapacity;
+      return matchesEnergyClass && matchesFunctions && matchesCapacity && matchesSearch;
     });
 
     const sortData = () => {
@@ -42,7 +44,7 @@ const CardSection = () => {
 
     const sortedAndFiltered = sortData();
     setSortedMachines(sortedAndFiltered);
-  }, [energyClassFilter, functionsFilter, capacityFilter, sortBy]);
+  }, [energyClassFilter, functionsFilter, capacityFilter, sortBy, searchBy]); // Add searchBy to the dependency array
 
   return (
     <div className={styles.cardSectionContainer}>
